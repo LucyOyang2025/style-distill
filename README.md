@@ -38,8 +38,8 @@ it doesn't "take inspiration" from it. It *measures* it.
 Then it casts what it measured into a reusable skill, applies that skill to **your**
 content, and finally checks whether the result is a genuine twin of the original.
 
-Five different design languages. One manuscript. All five documents in
-[`examples/`](examples/) were produced by this skill — that is the whole point:
+Three different design languages. One manuscript. Every document in
+[`examples/`](examples/) was produced by this skill — that is the whole point:
 **the source changes, the writing stays yours.**
 
 ---
@@ -66,20 +66,18 @@ when the gate's own assumption is wrong for that source.
 
 ---
 
-## Gallery — one manuscript, five design languages
+## Gallery — one manuscript, three design languages
+
+Each sheet shows **five non-consecutive pages** of a fourteen-page document — page
+numbers are printed on the tiles, so the gaps are visible. Pages carrying the
+operator-side (B-end) dashboards and internal product flows are not published.
 
 | | |
 | --- | --- |
 | ![T.D-Lovera](examples/case-01-td-lovera-overview.png) | ![Weave](examples/case-03-weave-overview.png) |
-| **T.D-Lovera** (EN) — dark bands, condensed display type, orange punctuation | **Weave** (EN) — light grey canvas, rounded white cards, sienna accent, data charts |
-| ![T.D-Lovera 中文](examples/case-02-td-lovera-zh-overview.png) | ![Klimt](examples/case-04-klimt-overview.png) |
-| **T.D-Lovera** (中文) — same skeleton, system CJK stack, line breaks re‑tuned | **Klimt's *The Kiss*** — a painting, not a website: gold leaf, mosaic motifs, its own colour proportions |
-
-Single pages, closer up:
-
-| | |
-| --- | --- |
-| ![Weave cover](examples/case-03-weave-page-01.png) | ![中文内页](examples/case-02-td-lovera-zh-page-04.png) |
+| **T.D-Lovera** (EN) — dark bands, condensed display type, orange punctuation on a 6-column grid | **Weave** (EN) — light grey canvas, rounded white cards, sienna accent, data charts |
+| ![T.D-Lovera 中文](examples/case-02-td-lovera-zh-overview.png) | |
+| **T.D-Lovera** (中文) — same skeleton, system CJK stack, line breaks re‑tuned | |
 
 More detail: [`examples/README.md`](examples/README.md).
 

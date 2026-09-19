@@ -34,7 +34,7 @@ INTP，想得太多，热爱艺术、哲学和科技；业余时间就学点前�
 量完把它铸成一个可复用的技能，再把你的内容装进去；
 最后还要查一遍：产出跟原风格到底是不是双胞胎。
 
-五种设计语言，同一份手稿——[`examples/`](examples/) 里那几份都是这个 skill 出的。
+三种设计语言，同一份手稿——[`examples/`](examples/) 里那几张都是这个 skill 出的。
 这就是它的全部意思：**源可以换，文字永远是你自己的。**
 
 ---
@@ -59,20 +59,17 @@ INTP，想得太多，热爱艺术、哲学和科技；业余时间就学点前�
 
 ---
 
-## 案例：同一份手稿，五种设计语言
+## 案例：同一份手稿，三种设计语言
+
+每张拼图是十四页文档里**不连续的 5 页**——角标写着页码，看得出中间跳了页。
+带 B 端后台大屏和产品内部流程的页面**不公开**。
 
 | | |
 | --- | --- |
 | ![T.D-Lovera](examples/case-01-td-lovera-overview.png) | ![Weave](examples/case-03-weave-overview.png) |
-| **T.D-Lovera**（英文）——深色带、窄体大标题、橙色点缀 | **Weave**（英文）——浅灰底、圆角白卡、赭红点缀、数据图表 |
-| ![T.D-Lovera 中文](examples/case-02-td-lovera-zh-overview.png) | ![Klimt](examples/case-04-klimt-overview.png) |
-| **T.D-Lovera**（中文）——骨架不动，换系统中文字族、重调行距 | **克里姆特《吻》**——源是一幅画不是网站：金箔、母题、它自己的色彩比例 |
-
-单页看得更清楚：
-
-| | |
-| --- | --- |
-| ![Weave 封面](examples/case-03-weave-page-01.png) | ![中文内页](examples/case-02-td-lovera-zh-page-04.png) |
+| **T.D-Lovera**（英文）——深色带、窄体大标题、橙色点缀、6 栏网 | **Weave**（英文）——浅灰底、圆角白卡、赭红点缀、数据图表 |
+| ![T.D-Lovera 中文](examples/case-02-td-lovera-zh-overview.png) | |
+| **T.D-Lovera**（中文）——骨架不动，换系统中文字族、重调行距 | |
 
 更多说明见 [`examples/README.md`](examples/README.md)。
 

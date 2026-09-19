@@ -140,7 +140,7 @@ No framework required. The package is documentation first:
 ## 5 · Verify your install
 
 ```bash
-node scripts/dna-probe.mjs ./examples/case-04-klimt-overview.png --out check.json
+node scripts/dna-probe.mjs ./examples/case-01-td-lovera-overview.png --out check.json
 ```
 
 If that writes a `check.json` containing a palette with area shares, the instruments
