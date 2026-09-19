@@ -30,7 +30,15 @@ npx playwright install chromium      # or point CHROME_PATH at an existing Chrom
 
 ## 2 · Install into an agent
 
-Skills live under the agent's `agent_state/skills/` directory:
+**One line** (downloads a tarball from the GitHub API, unpacks it, then self-checks —
+no `git` needed):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/LucyOyang2025/style-distill/main/install.sh \
+  | bash -s -- <your-agent>/agent_state/skills/style-distill
+```
+
+Or by hand — skills live under the agent's `agent_state/skills/` directory:
 
 ```bash
 cp -r style-distill <your-agent>/agent_state/skills/

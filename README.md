@@ -42,6 +42,13 @@ Three different design languages. One manuscript. Every document in
 [`examples/`](examples/) was produced by this skill — that is the whole point:
 **the source changes, the writing stays yours.**
 
+![What you hand it, and what comes back](examples/input-output.png)
+
+<sub>**Left — the input:** one template link, one document of your own, one word (中文 / English).
+**Right — the output:** the same words, in that template's design language. The interface
+screenshots inside the sample pages are withheld (flat blocks): the design language is the
+deliverable, the product behind it is not.</sub>
+
 ---
 
 ## What it actually measures
@@ -70,7 +77,9 @@ when the gate's own assumption is wrong for that source.
 
 Each sheet shows **five non-consecutive pages** of a fourteen-page document — page
 numbers are printed on the tiles, so the gaps are visible. Pages carrying the
-operator-side (B-end) dashboards and internal product flows are not published.
+operator-side (B-end) dashboards and internal product flows are not published, and the
+interface screenshots inside the published pages are withheld too. What is left is the
+part this skill is actually about: type, colour proportions, grid and image treatment.
 
 | | |
 | --- | --- |
@@ -109,21 +118,29 @@ the fonts are.
 
 ## Quick start
 
-```bash
-# 1) put it where your agent keeps skills
-cp -r style-distill <your-agent>/agent_state/skills/
+**One-line install** (no git needed — it pulls a tarball and checks itself):
 
-# 2) it needs Node 18+, and playwright-core with a Chromium build
+```bash
+curl -fsSL https://raw.githubusercontent.com/LucyOyang2025/style-distill/main/install.sh \
+  | bash -s -- <your-agent>/agent_state/skills/style-distill
+```
+
+<sub>or, if you have `git`: `git clone --depth 1 https://github.com/LucyOyang2025/style-distill.git <that dir>`</sub>
+
+Then:
+
+```bash
+# 1) it needs Node 18+; playwright-core with a Chromium build only for live sources
 npm i -g playwright-core
 
-# 3) measure a source
+# 2) measure a source
 node scripts/dna-probe.mjs https://example.com      --out dna.json --shot source.png
 node scripts/dna-probe.mjs ./my-painting.jpg        --out dna.json      # image source
 
-# 4) cast it into a skill
+# 3) cast it into a skill
 node scripts/mint-skill.mjs --dna dna.json --name design-example --title "Example" --out skills/design-example
 
-# 5) check the twin
+# 4) check the twin
 node scripts/dna-probe.mjs ./output.html --out twin.json --shot twin.png
 node scripts/dna-probe.mjs --compare dna.json twin.json     # exit code 0 = twin
 ```

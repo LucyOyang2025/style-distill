@@ -37,6 +37,12 @@ INTP，想得太多，热爱艺术、哲学和科技；业余时间就学点前�
 三种设计语言，同一份手稿——[`examples/`](examples/) 里那几张都是这个 skill 出的。
 这就是它的全部意思：**源可以换，文字永远是你自己的。**
 
+![给它什么，它交回什么](examples/input-output.png)
+
+<sub>**左边是输入**：一条模版链接、一份你自己的文档、一个字（中文 / English）。
+**右边是输出**：同一批文字，换成那条模版的设计语言。示例页里的界面截图已做打码（纯色块）——
+公开的是设计语言本身，不是背后的产品。</sub>
+
 ---
 
 ## 它到底量什么
@@ -62,7 +68,8 @@ INTP，想得太多，热爱艺术、哲学和科技；业余时间就学点前�
 ## 案例：同一份手稿，三种设计语言
 
 每张拼图是十四页文档里**不连续的 5 页**——角标写着页码，看得出中间跳了页。
-带 B 端后台大屏和产品内部流程的页面**不公开**。
+带 B 端后台大屏和产品内部流程的页面**不公开**；公开页面里的界面截图也做了打码（纯色块）。
+剩下的才是这个 skill 真正要证明的东西：字、色、栏、图。
 
 | | |
 | --- | --- |
@@ -95,21 +102,27 @@ READ  →  EXTRACT  →  MINT  →  VERIFY
 
 ## 上手
 
-```bash
-# 1）把技能放进你的 agent
-cp -r style-distill <your-agent>/agent_state/skills/
+**一行安装**（不用 git，下载 tarball 后自己体检一遍）：
 
-# 2）需要 Node 18+ 和 playwright-core（自带 Chromium）
+```bash
+curl -fsSL https://raw.githubusercontent.com/LucyOyang2025/style-distill/main/install.sh \
+  | bash -s -- <你的 agent>/agent_state/skills/style-distill
+```
+
+<sub>有 `git` 的话也可以：`git clone --depth 1 https://github.com/LucyOyang2025/style-distill.git <那个目录>`</sub>
+
+```bash
+# 1）需要 Node 18+；只有量活体页面才需要 playwright-core（自带 Chromium）
 npm i -g playwright-core
 
-# 3）量一个源
+# 2）量一个源
 node scripts/dna-probe.mjs https://example.com      --out dna.json --shot source.png
 node scripts/dna-probe.mjs ./my-painting.jpg        --out dna.json      # 图片源
 
-# 4）铸成技能
+# 3）铸成技能
 node scripts/mint-skill.mjs --dna dna.json --name design-example --title "Example" --out skills/design-example
 
-# 5）验双胞胎
+# 4）验双胞胎
 node scripts/dna-probe.mjs ./output.html --out twin.json --shot twin.png
 node scripts/dna-probe.mjs --compare dna.json twin.json     # 退出码 0 = twin
 ```
