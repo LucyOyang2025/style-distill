@@ -13,9 +13,10 @@ each time.
 Each sheet below is a **deliberately scattered sample: five non-consecutive pages** of
 a fourteen-page document, chosen to show the design language rather than the product.
 Pages that carry the operator-side (B-end) dashboards and internal product flows are
-**not published** — those are the part of the work that has to stay private. The pages
-you do see are cover, method, process and concept pages, with the page numbers printed
-on the corner of each tile so the gaps are honest.
+**not published**, and inside the pages that *are* published, every **interface
+screenshot is replaced by a flat block** — those screens carry the author's product UI
+and its sample user data. The page numbers are printed on the corner of each tile, so
+the gaps are honest.
 
 So: judge the **typography, colour proportions, grid and image treatment** here — they
 repeat page for page. The sample is a sample on purpose.
@@ -68,9 +69,9 @@ method, process, proof in numbers).
 ## What the examples deliberately do **not** contain
 
 No source content is redistributed: no source copy, no source photography, no logos,
-no mascots. What you see is the style layer rebuilt over the author's own text and her
-own product screenshots — which is exactly what the skill is for.
+no mascots. What you see is the style layer rebuilt over the author's own text — which
+is exactly what the skill is for.
 
-Nor is the whole product on display: five scattered pages per document, and none of the
-operator-side dashboard pages. The design language is the deliverable here; the product
-is not.
+Nor is the whole product on display: five scattered pages per document, none of the
+operator-side dashboard pages, and no interface screenshots at all (those are flat
+blocks). The design language is the deliverable here; the product is not.
